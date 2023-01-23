@@ -24,5 +24,6 @@ jobs:
         pip install pytest
     - name: Test with pytest
       run: |
-        pytest httptest.py
+        python -m httpd.py
+        python -m pytest httptest.py
         
